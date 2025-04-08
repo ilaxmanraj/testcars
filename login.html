@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cars.html">Cars</a>
+      <a href="Contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="Signup.html">Signup</a>
+    </nav>
+  </header>
+  <section class="login">
+    <h2>Login</h2>
+    <form id="login-form" onsubmit="handleLogin(event)">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" pattern="[0-9]{10}">
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required placeholder="Enter your password" minlength="6">
+      
+      <label for="remember-me">
+        <input type="checkbox" id="remember-me" name="remember-me"> Remember Me
+      </label>
+      
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="Signup.html">Sign up</a></p>
+    <p>Forgot your password? <a href="forgot-password.html">Reset it here</a></p>
+    <div id="login-message"></div>
+    <div class="social-login">
+      <p>Or log in with:</p>
+      <button type="button" class="google-login">Google</button>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 VroomVibes. All rights reserved.</p>
+    <a href="Contact.html">Contact Us</a>
+  </footer>
+  <button id="back-to-top" title="Go to top">↑</button>
+  <script>
+    // Back-to-top button
+    window.onscroll = function() {
+      const backToTopButton = document.getElementById('back-to-top');
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    };
+
+    document.getElementById('back-to-top').onclick = function() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    };
+
+    // Login form submission
+    function handleLogin(event) {
+      event.preventDefault(); // Prevent form submission
+
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const password = document.getElementById('password').value;
+      const loginMessage = document.getElementById('login-message');
+
+      // Validate phone number (10 digits)
+      const phonePattern = /^[0-9]{10}$/;
+      if (!phonePattern.test(phone)) {
+        loginMessage.textContent = 'Please enter a valid 10-digit phone number.';
+        loginMessage.className = 'error';
+        return;
+      }
+
+      // Simulate a login check
+      if (email === 'user@example.com' && password === 'password123' && phone === '1234567890') {
+        loginMessage.textContent = 'Login successful!';
+        loginMessage.className = 'success';
+        // Redirect to another page after successful login
+        window.location.href = 'dashboard.html';
+      } else {
+        loginMessage.textContent = 'Invalid email, phone number, or password. Please try again.';
+        loginMessage.className = 'error';
+      }
+    }
+  </script>
+</body>
+</html>

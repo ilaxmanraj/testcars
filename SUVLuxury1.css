@@ -1,0 +1,122 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  background-image: url("images/home/bg.webp");
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+/* Car Grid Layout */
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 1.5rem; /* Space between cards */
+  padding: 2rem;
+  max-width: 1200px; /* Limit the width of the grid */
+  margin: 0 auto; /* Center the grid */
+}
+
+/* Car Card Styling */
+.car-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensure images fit nicely */
+  border-bottom: 1px solid #ddd; /* Add a subtle border below the image */
+}
+
+.car-card h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.car-card .btn {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.car-card .btn:hover {
+  background-color: #ff6347; /* Tomato color for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .car-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    gap: 1rem; /* Reduce gap for smaller screens */
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .car-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap: 1rem; /* Reduce gap for smaller screens */
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+}
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: autp;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
