@@ -2,56 +2,56 @@
     {
       "id": 1,
       "name": "Lexus LX 600",
-      "image": "images/home/SUV.jpg",
+      "image": "SUV.jpg",
       "price": "$120/day",
       "description": "Bhai Vehicle"
     },
     {
       "id": 2,
       "name": "Rolls Royce Cullinan",
-      "image": "images/home/rrc.jpg",
+      "image": "rrc.jpg",
       "price": "$150/day",
       "description": "A sporty hatchback with a powerful engine, sleek design, and advanced features for an exhilarating driving experience."
     },
     {
       "id": 3,
       "name": "Porsche Cayenne",
-      "image": "images/home/porce.jpg",
+      "image": "porce.jpg",
       "price": "$60/day",
       "description": "A luxury hatchback with premium interiors, advanced safety features, and a smooth ride for a comfortable journey."
     },
     {
       "id": 4,
       "name": "Bentley Bentayga",
-      "image": "images/home/bently.webp",
+      "image": "bently.webp",
       "price": "$60/day",
       "description": "A luxury hatchback with premium interiors, advanced safety features, and a smooth ride for a comfortable journey."
     },
     {
       "id": 5,
       "name": "Lambhorghini Urus",
-      "image": "images/home/urus.jpg",
+      "image": "urus.jpg",
       "price": "$60/day",
       "description": "A luxury hatchback with premium interiors, advanced safety features, and a smooth ride for a comfortable journey."
     },
     {
       "id": 6,
       "name": "Volvo XC90",
-      "image": "images/home/volvo.jpeg",
+      "image": "volvo.jpeg",
       "price": "$60/day",
       "description": "A luxury hatchback with premium interiors, advanced safety features, and a smooth ride for a comfortable journey."
     },
     {
       "id": 7,
       "name": "Mini Cooper",
-      "image": "images/home/hatchback.jpg",
+      "image": "hatchback.jpg",
       "price": "$60/day",
       "description": "A luxury hatchback with premium interiors, advanced safety features, and a smooth ride for a comfortable journey."
     },
     {
       "id": 8,
       "name": "VW Golf",
-      "image": "images/home/vologolf.avif",
+      "image": "vologolf.avif",
       "price": "$60/day",
       "description": "A luxury hatchback with premium interiors, advanced safety features, and a smooth ride for a comfortable journey."
     }
